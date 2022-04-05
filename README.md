@@ -25,3 +25,20 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+![GRDUP(~SCK}@DF 32 %A@DS](https://user-images.githubusercontent.com/74596877/161683196-01846068-b5e7-412b-bd20-49a8a09a0c30.png)
+
+routing:
+![image](https://user-images.githubusercontent.com/74596877/161683251-ac5d4715-83cb-4c23-8639-7203006f2679.png)
+
+
+Home (API is not connected, So can not fetch data now)
+![E)K3KPP2 R2%ABE(~ 5KV%D](https://user-images.githubusercontent.com/74596877/161683265-95b55c4d-bad9-4218-951d-4f1e1f1d417e.png)
+
+![MBE8{)X`GP57_ 7)OQ23QN](https://user-images.githubusercontent.com/74596877/161683324-93c5a3f5-3b5c-4dd6-becc-948a1a28b2ab.png)
+
+
+![~$3@5(%)476IV`_J35OIP0R](https://user-images.githubusercontent.com/74596877/161683338-ee3ff9bd-209d-446d-bc88-7970f0fa013a.png)
+
+![(`B}EUV`}97$6$(68 LNRU1](https://user-images.githubusercontent.com/74596877/161683350-9b1fea48-ddf2-46be-a5fa-89e32489ec11.png)
+
