@@ -1,0 +1,56 @@
+.login-form {
+  width:800px;
+  max-width: 400px;
+  background: #B0C4DE	;
+  position: relative;
+  margin: 3% auto 0 auto;
+  text-align: center;
+  border-radius: 15px;
+
+}
+
+.login-form-margin {
+  margin-bottom: 16px;
+}
+
+.login-form-forgot {
+  float: right;
+}
+
+.login-form-button {
+  width: 100%;
+}
+.center-in-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.body{
+  background: url("../../assets/bg1.jpg") no-repeat 0 0;
+  font-family: 'Open Sans', sans-serif;
+  background-size:cover;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  min-height:800px;
+}
+.avtar img {
+  margin: 1.1em 0 0;
+  /*padding-left: 4em;*/
+
+}
+h1 {
+  padding-top: 50px;
+  text-align: center;
+  font-size: 4em;
+  color:#5A5AAD;
+  font-family:"Comic Sans MS", cursive, sans-serif；
+}
+
+
+

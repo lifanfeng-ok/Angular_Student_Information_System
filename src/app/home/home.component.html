@@ -1,0 +1,100 @@
+<nz-layout class="app-layout">
+  <nz-sider class="menu-sidebar"
+            nzCollapsible
+            nzWidth="210px"
+            nzBreakpoint="md"
+            [(nzCollapsed)]="isCollapsed"
+            [nzTrigger]="null"
+           nzTheme="dark">
+    <div class="sidebar-logo" style="background: #333333">
+      <a  target="_blank">
+        <img src="../../assets/coming-soon3.png" alt="logo">
+        <h1>学生信息管理系统</h1>
+      </a>
+    </div>
+    <ul nz-menu nzTheme="dark" nzMode="inline" [nzInlineCollapsed]="isCollapsed">
+      <li nz-submenu nzOpen='true' nzTitle="总体信息看板" nzIcon="dashboard">
+        <ul>
+          <li nz-menu-item nzMatchRouter>
+            <i nz-icon nzType="dashboard"></i>
+            <a routerLink="/home">学生信息看板</a>
+          </li>
+          <li nz-menu-item nzMatchRouter>
+            <i nz-icon nzType="dashboard"></i>
+            <a routerLink="/gpaedashboard">成绩信息看板</a>
+          </li>
+        </ul>
+      </li>
+      <li nz-submenu nzOpen='true' nzTitle="学生信息表" nzIcon="form">
+        <ul>
+          <li nz-menu-item nzMatchRouter>
+            <i nz-icon nzType="form"></i>
+            <a routerLink="/search">学生基本信息表</a>
+          </li>
+          <li nz-menu-item nzMatchRouter>
+            <i nz-icon nzType="form"></i>
+            <a routerLink="/score_query">学生成绩表</a>
+          </li>
+          <li nz-menu-item nzMatchRouter>
+            <i nz-icon nzType="form"></i>
+            <a routerLink="/gradedashboard">学生GPA表</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </nz-sider>
+  <nz-layout>
+    <nz-header>
+      <div class="app-header">
+        <span class="header-trigger" (click)="isCollapsed = !isCollapsed">
+            <i class="trigger"
+               nz-icon
+               [nzType]="isCollapsed ? 'menu-unfold' : 'menu-fold'"
+            ></i>
+        </span>
+        <nz-space [nzSize]="'small'">
+          <nz-space-item>
+            <nz-input-group  nzSearch [nzAddOnAfter]="suffixIconButton" style="vertical-align: middle; width:300px ">
+              <input type="text" nz-input placeholder="在学生信息管理系统中搜索" />
+            </nz-input-group>
+            <ng-template #suffixIconButton>
+              <button nz-button nzType="primary" nzSearch><i nz-icon nzType="search"></i></button>
+            </ng-template>
+          </nz-space-item>
+          <nz-space-item>
+            <nz-avatar nzIcon="user" style="color:#f56a00; background-color:#fde3cf;margin-left: 400px; height: 35px"></nz-avatar>
+          </nz-space-item>
+          <nz-space-item>
+            <button nz-button nzType="default"><i nz-icon nzType="login"></i> 登录 </button>
+          </nz-space-item>
+          <nz-space-item>
+            <button nz-button nzType="default" (click)="logout()"><i nz-icon nzType="logout"></i> 退出登录</button>
+          </nz-space-item>
+        </nz-space>
+      </div>
+
+    </nz-header>
+    <nz-content>
+      <div class="inner-content">
+        <nz-breadcrumb>
+          <nz-breadcrumb-item>
+            Home
+          </nz-breadcrumb-item>
+          <nz-breadcrumb-item>
+            <a>学生信息看板 </a>
+          </nz-breadcrumb-item>
+        </nz-breadcrumb>
+        <div echarts [options]="chartOption2" class="demo-chart" (chartInit)= "onChartInit2($event)">
+        </div>
+        <div echarts [options]="chartOption" class="demo-chart" (chartInit)= "onChartInit($event)" >
+        </div>
+          <div echarts [options]="chartOption4" class="demo-chart" (chartInit)= "onChartInit4($event)" >
+        </div>
+      </div>
+    </nz-content>
+  </nz-layout>
+</nz-layout>
+
+
+
+

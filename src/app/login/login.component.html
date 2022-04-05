@@ -1,0 +1,40 @@
+<div class="body">
+<!--  <h1>学生信息管理系统</h1>-->
+  <nz-content>
+    <h1>学生信息管理系统</h1>
+  <div class="center-in-center">
+<!--    <div class="avtar">-->
+<!--     <img src="../../assets/avtar.png" />-->
+<!--    </div>-->
+<form nz-form  [formGroup]="validateForm" class="login-form" (ngSubmit)="OnSubmit()" >
+  <div class="avtar">
+    <img src="../../assets/avtar.png" />
+  </div>
+  <nz-form-item>
+    <nz-form-control nzErrorTip="请输入学号!">
+      <nz-input-group nzPrefixIcon="user">
+        <input type="number" nz-input formControlName="stuid" [(ngModel)] ="stu.stuid" placeholder="学号" />
+      </nz-input-group>
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-control nzErrorTip="请输入密码!">
+      <nz-input-group nzPrefixIcon="lock">
+        <input type="password" nz-input formControlName="password" [(ngModel)] ="stu.password" placeholder="密码" />
+      </nz-input-group>
+    </nz-form-control>
+  </nz-form-item>
+  <div nz-row class="login-form-margin">
+    <div nz-col [nzSpan]="12">
+      <label nz-checkbox >
+        <span>记住我</span>
+      </label>
+    </div>
+    <div nz-col [nzSpan]="12">
+    </div>
+  </div>
+  <button nz-button class="login-form-button login-form-margin" [nzType]="'primary'">登陆</button>
+</form>
+  </div>
+</nz-content>
+</div>
