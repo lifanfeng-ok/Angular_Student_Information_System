@@ -27,7 +27,7 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
 
-The system is used to display the grades and other information of students in a certain college. Since the server is no longer open, and the server data was not saved locally in time, the specific information cannot be displayed now.
+The system is used to display the grades and other information of students in a certain college. Since the server is no longer open, and the server data was not saved locally in time, `the specific information cannot be displayed now`.
 
 The main function: 
 * `Information table section`: View basic student information such as majors and classes. View student grades and GPAs by subject, view overall grades for a course, and grades across majors. View the overall grades of a class such as average GPA, student with the highest GPA, students with the most failed subjects, etc.
