@@ -11,6 +11,8 @@ import { EChartOption, EChartsLoadingOption, ECharts } from 'echarts';
 export class HomeComponent implements OnInit {
   constructor(public router: Router, private studentservice: StudentService) { }
   isCollapsed = true;
+  test = 1;
+  newtest = false;
   students: Student[] = [];
   selectcourse: SelectCourse[] = [];
   course: Course[] = [];
