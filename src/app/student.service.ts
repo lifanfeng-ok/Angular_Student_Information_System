@@ -61,7 +61,7 @@ export class StudentService {
       stuid: id
     };
     return this.http.post(this.studentsUrl2, ID, httpOptions).pipe(
-      tap(_ => this.log('通过ID获取学生信息')
+      tap(_ => this.log('通过ID获取学生信息 and test')
     )) ;
   }
   getSelectinfo(): Observable<any> {
