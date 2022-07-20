@@ -53,7 +53,7 @@ export class StudentService {
   }
   getStudents(): Observable<any> {
     return this.http.get(this.studentsUrl).pipe(
-      tap(_ => this.log('获取所有学生信息') )
+      tap(_ => this.log('获取所有学生信息 and test') )
     );
   }
   getstudentbyID(id: number): Observable<any> {
