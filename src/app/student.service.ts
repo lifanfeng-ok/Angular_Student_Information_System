@@ -66,7 +66,7 @@ export class StudentService {
   }
   getSelectinfo(): Observable<any> {
     return this.http.get(this.studentUrl3).pipe(
-      tap(_ => this.log('获取学生选课信息'))
+      tap(_ => this.log('获取学生选课信息111'))
     ); }
   getUser(stu: Stu): Observable<any> {
     const loginUser = {
